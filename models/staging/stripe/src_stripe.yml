@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: stripe
+    description: A clone of a Postgres application database.
+    database: raw
+    tables:
+      - name: payments
+        description: Raw payment data.
+        columns:
+          - name: id
+            description: Primary key for payments.
+            tests:
+              - unique
+              - not_null
+
