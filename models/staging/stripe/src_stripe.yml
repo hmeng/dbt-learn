@@ -5,7 +5,7 @@ sources:
     description: A clone of a Postgres application database.
     database: raw
     tables:
-      - name: payments
+      - name: payment
         description: Raw payment data.
         columns:
           - name: id
